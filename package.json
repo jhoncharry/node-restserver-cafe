@@ -19,6 +19,7 @@
     "mongoose": "^5.10.7",
     "mongoose-unique-validator": "^2.0.3",
     "underscore": "^1.11.0",
-    "uniqid": "^5.2.0"
+    "uniqid": "^5.2.0",
+    "validator": "^13.1.17"
   }
 }

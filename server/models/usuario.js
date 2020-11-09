@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const uniqueValidator = require('mongoose-unique-validator');
+const validator = require('validator');
 
 
 let rolesValidos = {
@@ -55,6 +56,7 @@ usuarioSchema.methods.toJSON = function () {
     return userObject;
 };
 
-usuarioSchema.plugin(uniqueValidator, { message: "{PATH} debe de ser único" })
+usuarioSchema.plugin(uniqueValidator, { message: "{PATH} debe de ser único" });
+usuarioSchema.path("email").validate((email) => validator.isEmail(email), "Email no valido");
 
-module.exports = mongoose.model("Usuario", usuarioSchema);
+module.exports = mongoose.model("Usuario", usuarioSchema);  
