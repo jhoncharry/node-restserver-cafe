@@ -1,2 +1,4 @@
 node_modules/
 MongoAtlas.txt
+
+server/config/config.js
