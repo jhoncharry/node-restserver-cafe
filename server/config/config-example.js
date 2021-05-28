@@ -46,5 +46,5 @@ process.env.URLDB = urlDB;
 // Google Client ID
 // ================================
 
-process.env.CLIENT_ID = process.env.CLIENT_ID || "Aqui va el cliente ID de Google";
+process.env.CLIENT_ID = process.env.CLIENT_ID || "Aqui-va-el-cliente-ID-de-Google";
 
